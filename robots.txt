@@ -1,0 +1,3 @@
+Sitemap: https://yolopension.kr/sitemap.xml 
+User-agent: *   
+Allow: /       
