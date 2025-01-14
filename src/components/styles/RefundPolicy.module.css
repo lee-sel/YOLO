@@ -1,0 +1,47 @@
+.container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  max-width: 66%;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.policyContent {
+  margin-bottom: 20px;
+  font-size: 10px;
+}
+
+.policyTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.policyTable th,
+.policyTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.policyTable th {
+  background-color: #f2f2f2;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 0%;
+    max-width: 95%;
+  }
+
+  .policyContent {
+    font-size: 14px;
+  }
+
+  .policyTable th,
+  .policyTable td {
+    padding: 6px;
+  }
+}

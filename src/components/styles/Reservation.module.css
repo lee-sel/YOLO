@@ -1,0 +1,30 @@
+.reserBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* height: 120vh; */
+  height: 185vh;
+}
+
+.reservationNotice {
+  flex: 0 1 auto;
+}
+
+.iframeBox {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+
+}
+
+.iframeBox iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media (max-width: 767px) {
+  .reserBox {
+    height: 195vh;
+  }
+}

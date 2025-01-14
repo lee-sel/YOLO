@@ -1,0 +1,250 @@
+.header01 {
+  width: 90%;
+  margin: 0 auto;
+  position: fixed;
+  top: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  z-index: 1000;
+}
+
+.logo {
+  height: 45px;
+  padding: 5% 5% 3% 20%;
+}
+
+.hamburgerBtn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  min-width: 80px;
+  text-align: center;
+  display: inline-block;
+}
+
+.navbar li {
+  margin-left: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s ease;
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1);
+}
+
+
+/* .navbar a::before {
+  content: attr(data-tooltip);
+
+  position: absolute;
+  left: 50%;
+  bottom: 120%;
+
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  font-size: 14px;
+  z-index: 1000;
+
+}
+
+.navbar a:hover::before {
+  opacity: 1;
+  visibility: visible;
+} */
+
+.navbar a::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 50%;
+  bottom: 120%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  font-size: 14px;
+  z-index: 1000;
+}
+
+.navbar a:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.reservationBtn {
+  background-color: #B3907A;
+  color: white;
+  border: none;
+  border-radius: 0;
+  padding: 18px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 20px;
+  min-width: 120px;
+  justify-content: center;
+}
+
+.reservationBtn::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+  width: calc(100% - 30px);
+  height: 1px;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s ease;
+}
+
+.reservationBtn:hover::after {
+  transform: scaleX(1);
+}
+
+@media (max-width: 768px) {
+  .header01 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    z-index: 1000;
+    height: 60px;
+  }
+
+  .logo {
+    height: 45px;
+    padding: 0 10px;
+  }
+
+  .hamburgerBtn {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: white;
+    width: 100%;
+    text-align: right;
+    padding: 10px 0;
+  }
+
+  .navOpen {
+    display: block;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+    padding-right: 20px;
+  }
+
+  .reservationBtn {
+    padding: 0px 57px;
+    margin-left: 0;
+    background-color: white;
+  }
+
+  .navbar a[data-tooltip="SPECIAL"]::after {
+    content: "부대시설 & 서비스";
+  }
+
+  .navbar a[data-tooltip="ROOMS"]::after {
+    content: "객실";
+  }
+
+  .navbar a[data-tooltip="LOCATION"]::after {
+    content: "오시는 길";
+  }
+
+  .navbar a[data-tooltip="RESERVATION"]::after {
+    content: "예약하기";
+  }
+
+  .reservationBtn::after {
+    content: "예약하기";
+    position: static;
+    transform: none;
+    background: none;
+    width: auto;
+    height: auto;
+  }
+}

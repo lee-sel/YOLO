@@ -1,0 +1,47 @@
+.ReservationNotice01 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+
+.toggleButton {
+  background: none;
+  border: none;
+  display: flex;
+}
+
+.arrow {
+  display: inline-block;
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.arrowOpen {
+  transform: rotate(90deg);
+}
+
+.noticeContent {
+  align-items: center;
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid #ccc;
+  margin-top: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-size: 0.7rem;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.highlight {
+  background-color: #EFE7DA;
+  padding: 0 0.2em;
+  border-radius: 0.2em;
+}

@@ -1,0 +1,46 @@
+.Heading {
+  text-align: center;
+  margin: 20px 0;
+  /* background-color: #EFE7DA; */
+  /* background-color: #F5F5EB; */
+  padding: 2%;
+}
+
+.Heading h4 {
+  font-size: 50px;
+  color: #333;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  animation: slideIn 1s ease-out;
+}
+
+.Heading p {
+  font-size: 1rem;
+  color: #777;
+  margin: 0;
+  padding: 0;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

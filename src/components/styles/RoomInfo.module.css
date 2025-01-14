@@ -1,0 +1,54 @@
+/* 전체적인 레이아웃 및 폰트 설정 */
+.container {
+  line-height: 1.6;
+  margin: 20px;
+  color: #333;
+}
+
+/* 각 단락에 대한 기본 스타일 */
+.paragraph {
+  margin: 4px;
+  color: dimgray;
+  font-size: 13px;
+}
+
+/* 제목 스타일 */
+.header {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #474242;
+  padding: 10px 0px 0px 0;
+  position: relative;
+}
+
+/* 헤더의 굵은 짧은 선 */
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 4px;
+  /* 선의 두께를 조정 */
+  background-color: #B3907A;
+  /* 선의 색상 */
+}
+
+/* 강조된 텍스트 */
+.highlight {
+  color: #bd8984;
+  font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 3px;
+    background-color: #B3907A;
+  }
+}

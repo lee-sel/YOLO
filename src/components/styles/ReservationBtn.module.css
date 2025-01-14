@@ -1,0 +1,51 @@
+.reservationBtn01 {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 20px;
+
+}
+
+.reservationBtn {
+  background-color: #B3907A;
+  color: white;
+  border: none;
+  border-radius: 0;
+  padding: 18px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  min-width: 120px;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  visibility: hidden;
+
+}
+
+.reservationBtn::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+  width: calc(100% - 30px);
+  height: 1px;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s ease;
+}
+
+.reservationBtn:hover::after {
+  transform: scaleX(1);
+}
+
+@media (max-width: 768px) {
+  .reservationBtn {
+    visibility: visible;
+
+  }
+}

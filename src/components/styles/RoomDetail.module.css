@@ -1,0 +1,150 @@
+.roomDetail01 {
+  padding: 20px;
+}
+
+.roomHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.roomHeader::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  border-right: 3px solid #EFE7DA;
+  border-top: 3px solid #EFE7DA;
+  transform: rotate(0deg);
+}
+
+.roomHeader::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border-bottom: 3px solid #EFE7DA;
+  border-right: 3px solid #EFE7DA;
+  transform: rotate(-270deg);
+}
+
+.roomHeader h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.roomHeader p {
+  font-size: 1rem;
+  padding-left: 10px;
+  margin-top: 35px;
+  color: #555;
+}
+
+.roomContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+
+}
+
+.imgSlider {
+  flex: 1;
+  max-width: 50%;
+}
+
+.detailImage {
+  width: 100%;
+  height: auto;
+  padding-top: 1px;
+}
+
+.textContent {
+  flex: 1;
+  max-width: 40%;
+  font-size: 1rem;
+  color: #333;
+}
+
+.textContent p:first-child {
+  position: relative;
+  margin-top: 1px;
+  padding-top: 14px;
+  margin-bottom: 20px;
+}
+
+.textContent p:first-child::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 4px;
+  background-color: #B3907A;
+}
+
+.textContent p:first-child::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #EFE7DA;
+  margin-top: 10px;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #999;
+  padding: 50px;
+}
+
+@media (max-width: 768px) {
+  .roomContainer {
+    flex-direction: column;
+  }
+
+  .imgSlider {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .textContent p:first-child::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background-color: #B3907A;
+  }
+
+  .textContent p:first-child::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 2px;
+    background-color: #EFE7DA;
+    margin-top: 10px;
+  }
+
+  .textContent {
+    max-width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .roomHeader h1 {
+    margin-top: 8px;
+    font-size: 2.3rem;
+  }
+
+  .roomHeader p {
+    font-size: 0.9rem;
+  }
+}
