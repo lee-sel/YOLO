@@ -1,0 +1,114 @@
+{
+  "rooms": [
+    {
+      "id": 1,
+      "name": "YOU",
+      "room_number": 101,
+      "headcount": "기준 4인 / 최대 8인",
+      "room_type": "단체,  거실, 방(2)",
+      "main_img": "https://drawer-cdn.kakao.com/dnd/drawer/cloud/4ebb9c0af877da46e6ec3cd77ee091ce/3370332338227442086/Ctd6/50/i_6a6a03ba53aa.jpg?dconv-w=0&dconv-h=0&dconv-l=10485760&dconv-s=Lj"
+    },
+    {
+      "id": 2,
+      "name": "ONLY",
+      "room_number": 201,
+      "headcount": "기준 2인 / 최대 4인",
+      "room_type": "복층",
+      "main_img": "https://drawer-cdn.kakao.com/dnd/drawer/cloud/4ebb9c0af877da46e6ec3cd77ee091ce/3370332338294550956/YJtP/36/i_22ee0437b729.jpg?dconv-w=0&amp;dconv-h=0&amp;dconv-l=10485760&amp;dconv-s=Lj"
+    },
+    {
+      "id": 3,
+      "name": "LIVE",
+      "room_number": 202,
+      "headcount": "기준 2인 / 최대 4인",
+      "room_type": "복층",
+      "main_img": "https://drawer-cdn.kakao.com/dnd/drawer/cloud/4ebb9c0af877da46e6ec3cd77ee091ce/3370332338487488956/Ah7jfU/50/i_5f9cae44291a.jpg?dconv-w=0&amp;dconv-h=0&amp;dconv-l=10485760&amp;dconv-s=Lj"
+    },
+    {
+      "id": 4,
+      "name": "ONCE",
+      "room_number": 203,
+      "headcount": "기준 2인 / 최대 4인",
+      "room_type": "복층",
+      "main_img": "https://drawer-cdn.kakao.com/dnd/drawer/cloud/4ebb9c0af877da46e6ec3cd77ee091ce/3370332338764313038/uejW/48/i_d3c9823425c1.jpg?dconv-w=0&amp;dconv-h=0&amp;dconv-l=10485760&amp;dconv-s=Lj"
+    }
+  ],
+  "details": [
+    {
+      "room_number": 101,
+      "headcount": "기준 4인 / 최대 8인",
+      "images": [
+        {
+          "id": 1,
+          "url": "https://drawer-cdn.kakao.com/dnd/drawer/media_file/4ebb9c0af877da46e6ec3cd77ee091ce/qbsti/o01kgU1DPE/adAZwQ5D0jLShmKQGMxkaK/i_fb0a12f710ed.jpg?dconv-w=0&amp;dconv-h=0&amp;dconv-l=10485760&amp;dconv-s=Lj"
+        },
+        {
+          "id": 2,
+          "url": "https://drawer-cdn.kakao.com/dnd/drawer/media_file/4ebb9c0af877da46e6ec3cd77ee091ce/KDBHb/o01iRA6rYD/Aeep6hsMFd9Tuy16kRAsUk/i_4508406c586d.jpg?dconv-w=0&amp;dconv-h=0&amp;dconv-l=10485760&amp;dconv-s=Lj"
+        },
+        {
+          "id": 3,
+          "url": "https://drawer-cdn.kakao.com/dnd/drawer/media_file/4ebb9c0af877da46e6ec3cd77ee091ce/bfNbEY/o01koyKQUO/6Y898NvQRIEkpqMgiRu6j1/i_43ef0b655cf9.jpg?dconv-w=0&amp;dconv-h=0&amp;dconv-l=10485760&amp;dconv-s=Lj"
+        }
+      ]
+    },
+    {
+      "room_number": 201,
+      "headcount": "기준 2인 / 최대 4인",
+      "images": [
+        {
+          "id": 1,
+          "url": "https://drawer-cdn.kakao.com/dnd/drawer/media_file/4ebb9c0af877da46e6ec3cd77ee091ce/yXZeY/o01i6SyIvx/ouqQcTFFKpz2hTgcHkj5PK/i_cfb9a2156a7e.jpg?dconv-w=0&amp;dconv-h=0&amp;dconv-l=10485760&amp;dconv-s=Lj"
+        },
+        {
+          "id": 2,
+          "url": "https://drawer-cdn.kakao.com/dnd/drawer/media_file/4ebb9c0af877da46e6ec3cd77ee091ce/dUobxF/o01ifvhuZv/DjFjl9ER93WfKEoTVWrKtk/i_37e52929085d.jpg?dconv-w=0&amp;dconv-h=0&amp;dconv-l=10485760&amp;dconv-s=Lj"
+        },
+        {
+          "id": 3,
+          "url": "https://drawer-cdn.kakao.com/dnd/drawer/media_file/4ebb9c0af877da46e6ec3cd77ee091ce/cckmWB/o01jO5mkBp/Tzmu8QC09j5BnV2hKlu9vK/i_b03345b5cc08.jpg?dconv-w=0&amp;dconv-h=0&amp;dconv-l=10485760&amp;dconv-s=Lj"
+        },
+        {
+          "id": 4,
+          "url": "https://drawer-cdn.kakao.com/dnd/drawer/media_file/4ebb9c0af877da46e6ec3cd77ee091ce/xDUvI/o01jQa2QXG/3KRqgC5WGRCoL9QobFOFa1/i_ad2fc1b08983.jpg?dconv-w=0&amp;dconv-h=0&amp;dconv-l=10485760&amp;dconv-s=Lj"
+        }
+      ]
+    },
+    {
+      "room_number": 202,
+      "headcount": "기준 2인 / 최대 4인",
+      "images": [
+        {
+          "id": 1,
+          "url": "https://drawer-cdn.kakao.com/dnd/drawer/media_file/4ebb9c0af877da46e6ec3cd77ee091ce/kOeLR/o01lYzT8Ho/ln719P2leVYDmSkrBQuA3K/i_72156fca0d67.jpg?dconv-w=0&amp;dconv-h=0&amp;dconv-l=10485760&amp;dconv-s=Lj"
+        },
+        {
+          "id": 2,
+          "url": "https://drawer-cdn.kakao.com/dnd/drawer/media_file/4ebb9c0af877da46e6ec3cd77ee091ce/2HpcB/o01jJCYCPq/ITbySxdKh2OCJ1kcE3bp1K/i_b2d7284849b3.jpg?dconv-w=0&amp;dconv-h=0&amp;dconv-l=10485760&amp;dconv-s=Lj"
+        },
+        {
+          "id": 3,
+          "url": "https://drawer-cdn.kakao.com/dnd/drawer/media_file/4ebb9c0af877da46e6ec3cd77ee091ce/nkB1p/o01jaHraWh/rkKLkNAsWGUQwJW5YV1Zxk/i_16599e73cd19.jpg?dconv-w=0&amp;dconv-h=0&amp;dconv-l=10485760&amp;dconv-s=Lj"
+        }
+      ]
+    },
+    {
+      "room_number": 203,
+      "headcount": "기준 2인 / 최대 4인",
+      "images": [
+        {
+          "id": 1,
+          "url": "https://drawer-cdn.kakao.com/dnd/drawer/media_file/4ebb9c0af877da46e6ec3cd77ee091ce/cqmW6g/o01mLmWOTs/1NArgXEPK1zOsr1pbUXBzK/i_fc2b2d6e5fdd.jpg?dconv-w=0&amp;dconv-h=0&amp;dconv-l=10485760&amp;dconv-s=Lj"
+        },
+        {
+          "id": 2,
+          "url": "https://drawer-cdn.kakao.com/dnd/drawer/media_file/4ebb9c0af877da46e6ec3cd77ee091ce/eor5f/o01kATuK2f/wi0RLSYIyMM8TVcydnL3D0/i_33566f7f6202.jpg?dconv-w=0&amp;dconv-h=0&amp;dconv-l=10485760&amp;dconv-s=Lj"
+        },
+        {
+          "id": 3,
+          "url": "https://example.com/image3.jpg"
+        }
+      ]
+    }
+  ]
+}
