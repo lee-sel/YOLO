@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/YOLO/static/css/main.f9f347ea.css",
+    "main.js": "/YOLO/static/js/main.5f3fee46.js",
+    "static/media/slick.svg": "/YOLO/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/YOLO/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/YOLO/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/YOLO/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/YOLO/index.html",
+    "main.f9f347ea.css.map": "/YOLO/static/css/main.f9f347ea.css.map",
+    "main.5f3fee46.js.map": "/YOLO/static/js/main.5f3fee46.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9f347ea.css",
+    "static/js/main.5f3fee46.js"
+  ]
+}
