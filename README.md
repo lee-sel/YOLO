@@ -6,6 +6,8 @@
 ### 도메인
 yolopension.kr
 
+응답 확인: ```nslookup yolopension.kr
+
 
 ###
 ```npm run deploy
