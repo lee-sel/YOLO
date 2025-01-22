@@ -62,45 +62,46 @@ export default function Header() {
       <div className={`${style.navbar} ${btnOpen ? style.navOpen : ''}`}>
         <ul>
           <li>
-            <a
-              href="/special"
+            <Link
+              to="/special"
               onMouseEnter={() => handleMouseEnter('special')}
               onMouseLeave={() => handleMouseLeave('special')}
               style={{ textDecoration: 'none', color: 'black' }}
             >
               {isMobile ? '부대시설 & 서비스' : hoverText.special}
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/room"
+            <Link
+              to="/room"
               onMouseEnter={() => handleMouseEnter('rooms')}
               onMouseLeave={() => handleMouseLeave('rooms')}
               style={{ textDecoration: 'none', color: 'black' }}
             >
               {isMobile ? '객실' : hoverText.rooms}
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/location"
+            <Link
+              to="/location"
               onMouseEnter={() => handleMouseEnter('location')}
               onMouseLeave={() => handleMouseLeave('location')}
               style={{ textDecoration: 'none', color: 'black' }}
             >
               {isMobile ? '오시는 길' : hoverText.location}
-            </a>
+            </Link>
           </li>
           <li
             className={style.reservationBtn}
             onMouseEnter={() => handleMouseEnter('reservation')}
             onMouseLeave={() => handleMouseLeave('reservation')}
           >
-            <a href="/reservation">
+            <Link to="/reservation">
               {isMobile ? '실시간예약' : hoverText.reservation}
-            </a>
+            </Link>
           </li>
         </ul>
+
       </div>
     </div>
   );
