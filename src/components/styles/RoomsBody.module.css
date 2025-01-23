@@ -50,7 +50,7 @@
 }
 
 .roomImg {
-  width: 60%;
+  width: 50%;
   height: auto;
   margin: 10px;
 }
@@ -60,11 +60,11 @@
 }
 
 .odd {
-  background-color: #f2efee7a;
+  /* background-color: #f2efee7a; */
 }
 
 .even {
-  background-color: #f2efee7a;
+  /* background-color: #f2efee7a; */
 }
 
 .RoomsHeading01 {
@@ -97,8 +97,13 @@
   color: #555;
 }
 
+.roomNameLine {
+  width: 20px;
+  background-color: #B3907A;
+}
+
 .detailsButton {
-  background-color: #EFE7DA;
+  /* background-color: #EFE7DA; */
   color: #000;
   border: none;
   border-radius: 0;
@@ -113,17 +118,19 @@
   text-align: center;
   text-decoration: none;
   transition: color 0.3s ease;
-  margin-top: 10%;
+  margin-top: 4%;
 }
 
+/* fixed? */
 .detailsButton::after {
   content: '';
   position: absolute;
   bottom: 5px;
   left: 15px;
-  width: calc(100% - 30px);
+  width: 30%;
   height: 1px;
-  background-color: white;
+  margin-left: calc(33.5% - 8px);
+  background-color: #B3907A;
   transform: scaleX(0);
   transform-origin: bottom left;
   transition: transform 0.3s ease;

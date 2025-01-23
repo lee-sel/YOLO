@@ -6,38 +6,6 @@ import { Link } from 'react-router-dom';
 function RoomsBody() {
 
   const rooms = [
-    // {
-    //   id: 1,
-    //   name: 'YOU',
-    //   room_number: 101,
-    //   headcount: '기준 4인 / 최대 8인',
-    //   room_type: '단체, 거실, 방(2)',
-    //   main_img: `${process.env.PUBLIC_URL}/yoloView/101/1.jpg`
-    // },
-    // {
-    //   id: 2,
-    //   name: 'ONLY',
-    //   room_number: 201,
-    //   headcount: '기준 2인 / 최대 4인',
-    //   room_type: '복층',
-    //   main_img: `${process.env.PUBLIC_URL}/yoloView/201/2.jpg`
-    // },
-    // {
-    //   id: 3,
-    //   name: 'LIVE',
-    //   room_number: 202,
-    //   headcount: '기준 2인 / 최대 4인',
-    //   room_type: '복층',
-    //   main_img: `${process.env.PUBLIC_URL}/yoloView/202/1.jpg`
-    // },
-    // {
-    //   id: 4,
-    //   name: 'ONCE',
-    //   room_number: 203,
-    //   headcount: '기준 2인 / 최대 4인',
-    //   room_type: '복층',
-    //   main_img: `${process.env.PUBLIC_URL}/yoloView/203/1.jpg`
-    // }
     {
       id: 1,
       name: 'YOU',
@@ -88,11 +56,15 @@ function RoomsBody() {
               <div className={style.roomsBody01}>
                 <div className={style.roomInfo}>
                   <div className={style.roomLogo}>YOLO pension & coffee</div>
-                  <h2>{room.name}</h2>
+                  <h2>{room.name}
+                    <p className={style.roomNameLine}></p>
+                  </h2>
                   <p>{room.room_number}호</p>
                   <p>인원: {room.headcount}</p>
                   <p>{room.room_type}</p>
+
                   <Link to={`/details/${room.room_number}`} className={style.detailsButton}>+ DETAIL</Link>
+
                 </div>
                 <img
                   src={room.main_img}
@@ -109,11 +81,17 @@ function RoomsBody() {
                 />
                 <div className={style.roomInfo}>
                   <div className={style.roomLogo}>YOLO pension & coffee</div>
-                  <h2>{room.name}</h2>
+                  <h2>{room.name}
+                    <p className={style.roomNameLine}></p>
+                  </h2>
                   <p>{room.room_number}호</p>
                   <p>인원: {room.headcount}</p>
                   <p>{room.room_type}</p>
-                  <Link to={`/details/${room.room_number}`} className={style.detailsButton}>+ DETAIL</Link>
+
+                  <Link to={`/details/${room.room_number}`} className={style.detailsButton}>
+                    + DETAIL
+                  </Link>
+
                 </div>
               </div>
             )}
