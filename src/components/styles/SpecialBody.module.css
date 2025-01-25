@@ -1,4 +1,4 @@
-.gridContainer {
+.body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0;
@@ -60,5 +60,127 @@
   .gridContainer {
     grid-template-columns: repeat(2, 1fr);
     /* 모바일에서는 2개씩 */
+  }
+}
+
+
+/* Menu.module.css--------------------------- */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.menuCategory {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.categoryTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.menuTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  display: table;
+  table-layout: fixed;
+  /* 고정된 테이블 크기 */
+}
+
+.menuTable thead {
+  background-color: #B3907A;
+  color: #fff;
+}
+
+.menuTable th {
+  padding: 12px 15px;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-bottom: none;
+}
+
+.menuTable tbody tr {
+  background-color: #fff;
+}
+
+.menuTable td {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.itemName {
+  font-weight: bold;
+}
+
+.itemHot,
+.itemIce {
+  color: #e74c3c;
+  font-size: 16px;
+}
+
+.menuTable tbody tr:last-child {
+  border-bottom: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  .menu {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .menuCategory {
+    padding: 15px;
+  }
+
+  .categoryTitle {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .menuTable {
+    width: 100%;
+    table-layout: auto;
+    font-size: 12px;
+  }
+
+  .menuTable th {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .menuTable td {
+    padding: 8px 10px;
+  }
+
+
+  .itemName {
+    font-size: 14px;
+  }
+
+  .itemHot,
+  .itemIce {
+    font-size: 14px;
+  }
+
+
+  .menuTable {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    /* iOS에서 자연스러운 스크롤 */
   }
 }
