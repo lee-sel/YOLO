@@ -57,7 +57,7 @@
 
 
 @media (max-width: 768px) {
-  .gridContainer {
+  .body {
     grid-template-columns: repeat(2, 1fr);
     /* 모바일에서는 2개씩 */
   }
