@@ -5,7 +5,7 @@ function MenuHeading() {
   return (
     <div className={style.Heading}>
       <h4>Menu</h4>
-      <p>YOLO 펜션에 투숙하시는 고객님께 30% 할인이 제공됩니다!</p>
+      <p>YOLO 펜션에 투숙하시는 모든 고객님께 30% 할인이 제공됩니다!</p>
     </div>
   )
 }

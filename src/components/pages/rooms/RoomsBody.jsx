@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import style from '../../styles/RoomsBody.module.css';
 import { Link } from 'react-router-dom';
 
@@ -70,6 +69,7 @@ function RoomsBody() {
                   src={room.main_img}
                   alt={`경주 펜션${room.name}`}
                   className={`${style.roomImg} ${style.evenImg}`}
+                  loading="lazy"
                 />
               </div>
             ) : (
@@ -78,6 +78,7 @@ function RoomsBody() {
                   src={room.main_img}
                   alt={room.name}
                   className={style.roomImg}
+                  loading="lazy"
                 />
                 <div className={style.roomInfo}>
                   <div className={style.roomLogo}>YOLO pension & coffee</div>
