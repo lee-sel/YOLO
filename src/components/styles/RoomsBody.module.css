@@ -201,8 +201,5 @@
 
   }
 
-  .detailsButton::after {
-    left: 10px;
-    width: calc(100% - 20px);
-  }
+  .detailsButton::after {}
 }

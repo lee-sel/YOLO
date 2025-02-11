@@ -54,7 +54,7 @@ export default function Header() {
   return (
     <div className={style.header01}>
       <Link to={'/'}>
-        <img className={style.logo} src={`${process.env.PUBLIC_URL}/yolologo.png`} alt="YOLO" />
+        <img className={style.logo} src={`${process.env.PUBLIC_URL}/yoloLogo1.webp`} alt="YOLO" />
       </Link>
       <button className={style.hamburgerBtn} onClick={clickBtn}>
         ☰

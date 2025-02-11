@@ -1,7 +1,48 @@
-import './App.css';
+// import './App.css';
+// import { Suspense } from "react";
+// import { BrowserRouter, Route, Routes } from 'react-router-dom';
+// import 'slick-carousel/slick/slick.css';
+// import 'slick-carousel/slick/slick-theme.css';
+// import Footer from './components/layouts/Footer';
+// import Header from './components/layouts/Header';
+// import Main from './components/layouts/Main';
+// import Reservation from './components/pages/reservation/Reservation';
+// import RoomsMain from './components/pages/rooms/RoomsMain';
+// import RoomDetail from './components/pages/rooms/RoomDetail';
+// import SpecialMain from './components/pages/specials/SpecialMain';
+// import LocationMain from './components/pages/location/LocationMain';
+// import Blank from './components/pages/Blank';
+
+
+// function App() {
+//   return (
+//     <>
+//     <BrowserRouter basename={process.env.PUBLIC_URL}>
+//     <Header/>
+//     <Suspense fallback={<div>로딩 중</div>}>
+//     <Routes>
+//     <Route path= "/" element= {<Main />} />
+//     <Route path= "/special" element= {<SpecialMain />} />
+//     <Route path= "/reservation" element= {<Reservation />} />
+//     <Route path= "/room" element= {<RoomsMain />} />
+//     <Route path="/details/:roomNumber" element={<RoomDetail />} />
+//     <Route path="/location" element={<LocationMain />} />
+//     </Routes>
+//     </Suspense>
+//     <Blank />
+//     <Footer/>
+//     </BrowserRouter>
+//     </>
+//   );
+// }
+
+// export default App;
+import { lazy, Suspense } from "react";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './App.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+
 import Footer from './components/layouts/Footer';
 import Header from './components/layouts/Header';
 import Main from './components/layouts/Main';
@@ -12,24 +53,32 @@ import SpecialMain from './components/pages/specials/SpecialMain';
 import LocationMain from './components/pages/location/LocationMain';
 import Blank from './components/pages/Blank';
 
+// 🔹 lazy로 RoomsBody 불러오기
+const RoomsBody = lazy(() => import("./components/pages/rooms/RoomsBody"));
 
 function App() {
   return (
-    <>
     <BrowserRouter basename={process.env.PUBLIC_URL}>
-    <Header/>
-    <Routes>
-    <Route path= "/" element= {<Main />} />
-    <Route path= "/special" element= {<SpecialMain />} />
-    <Route path= "/reservation" element= {<Reservation />} />
-    <Route path= "/room" element= {<RoomsMain />} />
-    <Route path="/details/:roomNumber" element={<RoomDetail />} />
-    <Route path="/location" element={<LocationMain />} />
-    </Routes>
-    <Blank />
-    <Footer/>
+      <Header />
+      <Suspense fallback={<div>로딩 중...</div>}>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/special" element={<SpecialMain />} />
+          <Route path="/reservation" element={<Reservation />} />
+          <Route path="/room" element={<RoomsMain />} />
+          <Route path="/details/:roomNumber" element={<RoomDetail />} />
+          <Route path="/location" element={<LocationMain />} />
+          {/* 🔹 Suspense로 감싸기 */}
+          <Route path="/rooms" element={
+            <Suspense fallback={<div>객실 정보 불러오는 중...</div>}>
+              <RoomsBody />
+            </Suspense>
+          } />
+        </Routes>
+      </Suspense>
+      <Blank />
+      <Footer />
     </BrowserRouter>
-    </>
   );
 }
 
