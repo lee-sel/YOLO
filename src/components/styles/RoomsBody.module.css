@@ -50,7 +50,7 @@
 }
 
 .roomImg {
-  width: 50%;
+  max-width: 50%;
   height: auto;
   margin: 10px;
 }
@@ -164,7 +164,7 @@
   }
 
   .roomImg {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     margin: 0;
   }
