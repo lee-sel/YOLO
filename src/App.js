@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -19,7 +19,7 @@ const RoomsBody = lazy(() => import("./components/pages/rooms/RoomsBody"));
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <Header />
       <Suspense fallback={<div>loading</div>}>
         <Routes>
@@ -29,7 +29,6 @@ function App() {
           <Route path="/room" element={<RoomsMain />} />
           <Route path="/details/:roomNumber" element={<RoomDetail />} />
           <Route path="/location" element={<LocationMain />} />
-          {/* 🔹 Suspense로 감싸기 */}
           <Route path="/rooms" element={
             <Suspense fallback={<div>객실 정보 불러오는 중...</div>}>
               <RoomsBody />
@@ -39,7 +38,7 @@ function App() {
       </Suspense>
       <Blank />
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
