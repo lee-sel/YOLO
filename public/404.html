@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>페이지를 찾을 수 없습니다</title>
+  <meta http-equiv="refresh" content="0;url=/#/" />
+  <script>
+    (function () {
+      var redirectPath = location.pathname + location.search + location.hash;
+      var newUrl = '/#' + redirectPath.replace(/^\//, '');
+      location.replace(newUrl);
+    })();
+  </script>
+</head>
+
+<body>
+  <p>페이지를 찾을 수 없습니다. <a href="/#/">홈으로 돌아가기</a></p>
+</body>
+
+</html>
