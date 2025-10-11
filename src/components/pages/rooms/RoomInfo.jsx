@@ -7,7 +7,6 @@ const MyComponent = () => {
       <p className={styles.header}>안내 및 편의시설 소개</p>
       <p className={styles.paragraph}>&nbsp;&nbsp;[추가인원]</p>
       <p className={styles.paragraph}>· 1인 당 인당 15,000원 <span className={styles.highlight}>**현장결제</span></p>
-      <p className={styles.paragraph}>· 추가 인원 요금은 경주 지역에서 최저가로 운영되고 있습니다.</p>
       <p className={styles.paragraph}>&nbsp;&nbsp;[개별바비큐]</p>
       <p className={styles.paragraph}>· 숯+그릴 비용 : 2인 기준 10,000원 / 인원 추가시 1인당 5,000원 <span className={styles.highlight}>**현장결제</span></p>
       <p className={styles.paragraph}>IPTV/WiFi</p>
